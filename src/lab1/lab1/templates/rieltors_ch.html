@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html"><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=win-1251">
+<title>Changing rieltor</title>
+    {% load staticfiles %}
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+
+</head><body>
+
+<script src="{% static "jquery/jquery.min.js" %}" type="text/javascript"></script>
+<script type="text/javascript" src="{% static "js/bootstrap.min.js" %}"></script>
+<h2>Changing rieltor</h2>
+<br>
+
+
+
+<table class="table table-striped">
+    <tbody>
+    <tr>
+        <th><span><p align="center" style=" font-size:18px">company</p></span></th>
+        <th><span><p align="center" style=" font-size:18px">name</p></span></th>
+        <th><span><p align="center" style=" font-size:18px">num_wb</p></span></th>
+        <th><span><p align="center" style=" font-size:18px">Action</p></span></th>
+    </tr>
+
+    <tr>
+        <form method="post" action="http://127.0.0.1:8000/rieltor/update">{% csrf_token %}
+            <td><p align="center"><input type="text" name="ch_com_rieltor"  value="{{company}}"/></p></td>
+            <td><p align="center"><input type="text" name="ch_name_rieltor"  value="{{name}}"/></p></td>
+            <td><p align="center"><input type="text" name="ch_num_wb_rieltor"  value="{{num_wb}}"/></p></td>
+            <!--<td><input type="hidden" name="old_id" value="{{old_id}}"/></td>-->
+            <td> <span><p align="center" style=" font-size:18px"><button type="submit"  class="btn btn-success dropdown-toggle">Update</button></p></span></td>
+        </form>
+    </tr>
+</tbody>
+</table>
+
+
+</body></html>

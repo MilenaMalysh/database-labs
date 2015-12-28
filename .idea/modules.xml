@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ODBlab1.iml" filepath="$PROJECT_DIR$/ODBlab1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/get_tables/get_tables.iml" filepath="$PROJECT_DIR$/get_tables/get_tables.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/lab1/lab1/templates/templates.iml" filepath="$PROJECT_DIR$/src/lab1/lab1/templates/templates.iml" />
+    </modules>
+  </component>
+</project>
+

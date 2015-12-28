@@ -1,0 +1,8 @@
+<house>
+<adr>Bagrat.st 5</adr>
+<price>100</price>
+<sold>0</sold>
+<pass>Pas3</pass>
+<num_wb>6666</num_wb>
+<con_name>Welt</con_name>
+</house>
